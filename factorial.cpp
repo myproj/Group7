@@ -1,7 +1,8 @@
 #include "functions.h"
 
 int factorial(int n){
-    while(n <= 0){
+    if(n == 0) return 1; 
+    while(n < 0){
 	cout << "\nPlease enter the positive number: ";
 	cin >> n;
     }	
