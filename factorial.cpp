@@ -1,8 +1,9 @@
 #include "functions.h"
+#include "iostream"
 
 int factorial(int n){
 	if(n<0){
-		cout<< "Please enter a new number\n";
+		std::cout<< "Please enter a new number\n";
 		return -1;	
 	} 
     if(n!=1){
