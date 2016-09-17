@@ -1,23 +1,27 @@
-#include<stdio.h>
+#include<iostream.h>
  
 int main()
 {
+   // declare variables to be used
    int n, sum = 0, remainder;
  
-   printf("Enter an integer\n");
-   scanf("%d",&n);
-    
+   // take user input
+   cout << "Enter an integer\n";
+   cin >> n;
+
+   // process input    
    while(n != 0)
    {
       remainder = n % 10;
-	  printf("The Remainder is %d\n", remainder);
+	  cin << "The Remainder is " << remainder << "\n";
       sum = sum + remainder;
-	  printf("The Sum is %d\n", sum);
+	  cout << "The Sum is " << sum << "\n";
       n = n / 10;
-	  printf("The n is %d\n", n);
+	  cout << "The n is " << n << "\n";
    }
  
-   printf("Sum of digits of entered number = %d\n",sum);
+   // output
+   cout << "Sum of digits of entered number = "<< sum << "\n";
  
    return 0;
 }
