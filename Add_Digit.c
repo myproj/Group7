@@ -13,6 +13,7 @@ int main()
    while(n != 0)
    {
       remainder = n % 10;
+      if(remainder<0 && n<=-10) remainder *= -1;
 	  printf("The Remainder is %d\n", remainder);
       sum = sum + remainder;
 	  printf("The Sum is %d\n", sum);
